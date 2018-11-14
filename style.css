@@ -16,6 +16,7 @@
 [class*="col-"] {
     width: 100%;
 }
+
 @media only screen and (min-width: 600px) {
     .col-s-1 {
         width: 8.33%;
@@ -65,82 +66,87 @@
         width: 100%;
     }
 }
-.col-1 {
-    width: 8.33%;
-}
 
-.col-2 {
-    width: 16.66%;
-}
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
 
-.col-3 {
-    width: 25%;
-}
+    .col-2 {
+        width: 16.66%;
+    }
 
-.col-4 {
-    width: 33.33%;
-}
+    .col-3 {
+        width: 25%;
+    }
 
-.col-5 {
-    width: 41.66%;
-}
+    .col-4 {
+        width: 33.33%;
+    }
 
-.col-6 {
-    width: 50%;
-}
+    .col-5 {
+        width: 41.66%;
+    }
 
-.col-7 {
-    width: 58.33%;
-}
+    .col-6 {
+        width: 50%;
+    }
 
-.col-8 {
-    width: 66.66%;
-}
+    .col-7 {
+        width: 58.33%;
+    }
 
-.col-9 {
-    width: 75%;
-}
+    .col-8 {
+        width: 66.66%;
+    }
 
-.col-10 {
-    width: 83.33%;
-}
+    .col-9 {
+        width: 75%;
+    }
 
-.col-11 {
-    width: 91.66%;
-}
+    .col-10 {
+        width: 83.33%;
+    }
 
-.col-12 {
-    width: 100%;
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 }
 
 .header {
+    background-color: orange;
     /*float: left;*/
     /*height: 300px;*/
+    /*display: inline-block;*/
 }
 
 .header .logo {
     /*width: 100%;*/
-    float: left;
-    background: orange;
+    /*float: left;*/
+    /*background: orange;*/
     /*height: 270px;*/
     text-align: center;
     /*padding-top: 1%;*/
 
-
 }
 
 .header .logo img {
-    width: 50%;
+    width: 70%;
     /*text-align: center;*/
     /*height: 270px;*/
 }
 
 .header .webname {
-    background: orange;
-    font-size: 100px;
+    /*background: orange;*/
+    font-size: 130px;
     text-align: left;
-    /*padding-top: 5%;*/
-    /*padding-bottom: 5%;*/
+    /*float: left;*/
+    padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 2%;
     /*height: 270px;*/
 }
@@ -151,17 +157,19 @@
     background-color: antiquewhite;
     /*background-color: orange;*/
     border: 1px solid black;
-    float: left;
+    /*float: left;*/
     font-size: 30px;
     /*text-align: center;*/
     /*padding: 20px;*/
 }
-.menu ul{
+
+.menu ul {
     /*text-align: center;*/
 }
+
 .menu ul li {
     display: block;
-    float: left;
+    /*float: left;*/
     color: #71609C;
     /*width: 90px;*/
     /*font-family: Consolas;*/
@@ -170,12 +178,15 @@
     padding-left: 22px;
     /*border-right: 3px solid black;*/
 }
-.main-login{
+
+.main-login {
+    /*float: left;*/
     /*height: 270px;*/
-    background-color: orange;
-    /*padding-top: 3%;*/
-    /*padding-bottom: 3%;*/
+    /*background-color: orange;*/
+    padding-top: 15%;
+    padding-bottom: 3%;
 }
+
 .login {
     text-align: left;
     padding-top: 3%;

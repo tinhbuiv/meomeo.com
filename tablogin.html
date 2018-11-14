@@ -14,11 +14,37 @@
         .radio {
             padding-left: 100px;
         }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .header {
+            /*text-align: center;*/
+            background-color: orange;
+        }
+
+        .webname {
+            text-align: center;
+            width: 100%;
+            float: left;
+            font-size: 130px;
+        }
+
+        .title {
+            width: 45%;
+        }
     </style>
 </head>
 <body>
+<div class="header row">
+    <div class="webname">meomeo.com</div>
+</div>
 <h1>Tạo tài khoản mới.</h1>
-<div class="login"><input type="text" placeholder="Họ" size="25"> <input type="text" placeholder="Tên" size="25"><br></div>
+<div class="login"><input type="text" placeholder="Họ" size="25"> <input type="text" placeholder="Tên" size="25"><br>
+</div>
 <div class="login"><input type="text" placeholder="Số di động hoặc email" size="56"><br></div>
 <div class="login"><input type="password" placeholder="Mật khẩu mới" size="56"><br></div>
 <div class="login">
