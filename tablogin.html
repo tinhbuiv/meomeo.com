@@ -33,8 +33,15 @@
             font-size: 130px;
         }
 
-        .title {
-            width: 45%;
+        /*.title {*/
+        /*width: 45%;*/
+        /*}*/
+        .msg-error {
+            color: red;
+        }
+
+        .msg-success {
+            color: green;
         }
     </style>
 </head>
@@ -43,27 +50,41 @@
     <div class="webname">meomeo.com</div>
 </div>
 <h1>Tạo tài khoản mới.</h1>
-<div class="login"><input type="text" placeholder="Họ" size="25"> <input type="text" placeholder="Tên" size="25"><br>
-</div>
-<div class="login"><input type="text" placeholder="Số di động hoặc email" size="56"><br></div>
-<div class="login"><input type="password" placeholder="Mật khẩu mới" size="56"><br></div>
-<div class="login">
-    <label>Date</label><br><input type="date"><br></div>
-<div>
-    <input class="login radio" type="radio" name="gender" value="male" checked>
-    <label>Male</label>
-    <input class="login radio" type="radio" name="gender" value="female">
-    <label>Female</label>
-</div>
-<select class="login" name="Option">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-</select>
-<div class="login"><input type="hidden"></div>
-<div class="login"><a href="index.html"> <input type="submit" value="Login"></a>
-    <input type="reset" value="Reset"><br>
-</div>
+<form name="main-login" action="#" method="get">
+    <div class="login">
+        <input type="text" placeholder="Username" size="56" name="username">
+        <span></span>
+    </div>
+    <div class="login">
+        <input type="text" placeholder="Số di động hoặc email" size="56" name="phone">
+        <span></span>
+    </div>
+
+    <div class="login">
+        <input type="password" placeholder="Mật khẩu mới" size="56" name="password">
+        <span></span>
+    </div>
+    <div class="login">
+        <label>Date</label><br><input type="date"><br></div>
+    <div>
+        <input class="login radio" type="radio" name="gender" value="male" checked>
+        <label>Male</label>
+        <input class="login radio" type="radio" name="gender" value="female">
+        <label>Female</label>
+    </div>
+    <select class="login" name="Option">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    <div class="login"><input type="hidden"></div>
+    <div class="login">
+        <input type="button" name="btn-submit" value="Login">
+        <input type="reset" value="Reset" name="btn-reset"><br>
+    </div>
+</form>
+<script src="tablogin.js"></script>
+
 </body>
 </html>

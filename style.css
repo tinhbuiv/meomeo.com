@@ -16,6 +16,12 @@
 [class*="col-"] {
     width: 100%;
 }
+.msg-error {
+    color: red;
+}
+.msg-success {
+    color: green;
+}
 
 @media only screen and (min-width: 600px) {
     .col-s-1 {
