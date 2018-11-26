@@ -32,13 +32,11 @@
                 <input type="submit" value="Login" name="btn-submit">
                 <span></span>
             </div>
-            <div class="login">
-                <label> Bạn chưa có tài khoản meomeo?</label>
-                <a href="tablogin.html">ĐĂNG KÍ NGAY !</a>
-                <span></span>
-            </div>
         </form>
-        <script src="login.js"></script>
+        <div class="login">
+            <label> Bạn chưa có tài khoản meomeo?</label>
+            <a href="tablogin.html">ĐĂNG KÍ NGAY !</a>
+        </div>
     </div>
 </div>
 <div class="body">
@@ -46,21 +44,20 @@
     </script>
     <div class="menu col-12 col-s-12">
         <ul>
-            <li class="col-2"><a href="#">logister</a></li>
-            <li class="col-2"><a href="#">Login</a></li>
-            <li class="col-2"><a href="#">Create Song</a></li>
-            <li class="col-2"><a href="#">Song</a></li>
-            <li class="col-2"><a href="#">My Song</a></li>
+            <li class="col-3"><input type="button" value="Logister" name="btn-logister"></li>
+            <!--<li class="col-2"><input type="button" value="Login" name="btn-loadsong"></li>-->
+            <li class="col-3"><input type="button" value="Create Song" name="btn-createsong"></li>
+            <li class="col-3"><input type="button" value="Load Song" name="btn-loadsong"></li>
+            <li class="col-3"><input type="button" value="My Song" name="btn-mysong"></li>
         </ul>
     </div>
-    <div class="main-content">
-        <div class="image">
-            <img src="">
-        </div>
-        <div class="title">
-
-        </div>
+    <div class="main-content" id="main-content">
+        <audio controls src=""></audio>
     </div>
+    <!--<div class="title">-->
+
+    <!--</div>-->
 </div>
 </body>
+<script src="login.js"></script>
 </html>

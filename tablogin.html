@@ -52,36 +52,57 @@
 <h1>Tạo tài khoản mới.</h1>
 <form name="main-login" action="#" method="get">
     <div class="login">
-        <input type="text" placeholder="Username" size="56" name="username">
+        <input type="text" placeholder="Firstname" size="56" name="firstname">
         <span></span>
     </div>
     <div class="login">
-        <input type="text" placeholder="Số di động hoặc email" size="56" name="phone">
+        <input type="text" placeholder="Lastname" size="56" name="lastname">
         <span></span>
     </div>
-
+    <div class="login">
+        <input type="text" placeholder="Số di động" size="56" name="phone">
+    <span></span>
+    </div>
+    <div class="login">
+        <input type="email" placeholder="Email" size="56" name="email">
+        <span></span>
+    </div>
     <div class="login">
         <input type="password" placeholder="Mật khẩu mới" size="56" name="password">
         <span></span>
     </div>
     <div class="login">
-        <label>Date</label><br><input type="date"><br></div>
-    <div>
-        <input class="login radio" type="radio" name="gender" value="male" checked>
-        <label>Male</label>
-        <input class="login radio" type="radio" name="gender" value="female">
-        <label>Female</label>
+        <label>Date:</label>
+        <input type="date" name="date">
     </div>
-    <select class="login" name="Option">
-        <option value="" disabled selected>Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-    </select>
-    <div class="login"><input type="hidden"></div>
     <div class="login">
-        <input type="button" name="btn-submit" value="Login">
-        <input type="reset" value="Reset" name="btn-reset"><br>
+        <label>Avatar:</label>
+        <input type="text" name="avatar">
+    </div>
+    <div class="login">
+        <label>Address:</label>
+        <textarea name="address" id="" cols="56" rows="3"></textarea>
+    </div>
+    <!--<div class="login">-->
+        <!--<label>Gender:</label>-->
+        <!--<input class="login radio" type="radio" name="gender" value="male" checked>-->
+        <!--<label>Male</label>-->
+        <!--<input class="login radio" type="radio" name="gender" value="female">-->
+        <!--<label>Female</label>-->
+    <!--</div>-->
+    <div class="login">
+        <label>Gender</label>
+        <select class="login" name="gender">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">male</option>
+            <option value="2">female</option>
+            <option value="3">...</option>
+        </select>
+    </div>
+    <!--<div class="login"><input type="hidden"></div>-->
+    <div class="login">
+        <input type="button" name="submit" value="Login">
+        <input type="reset" value="Reset" name="btn-reset">
     </div>
 </form>
 <script src="tablogin.js"></script>
