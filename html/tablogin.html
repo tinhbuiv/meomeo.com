@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tablogin.css">
+</head>
+<body>
+<div class="header row">
+    <div class="webname">meomeo.com</div>
+</div>
+<h1>Tạo tài khoản mới.</h1>
+<form name="main-login" action="#" method="get">
+    <div class="login">
+        <input type="text" placeholder="Firstname" size="56" name="firstname">
+        <span></span>
+    </div>
+    <div class="login">
+        <input type="text" placeholder="Lastname" size="56" name="lastname">
+        <span></span>
+    </div>
+    <div class="login">
+        <input type="text" placeholder="Số di động" size="56" name="phone">
+    <span></span>
+    </div>
+    <div class="login">
+        <input type="email" placeholder="Email" size="56" name="email">
+        <span></span>
+    </div>
+    <div class="login">
+        <input type="password" placeholder="Mật khẩu mới" size="56" name="password">
+        <span></span>
+    </div>
+    <div class="login">
+        <input type="password" placeholder="Nhập lại mật khẩu mới" size="56" name="comfirm-password">
+        <span></span>
+    </div>
+    <div class="login">
+        <label>Date:</label>
+        <input type="date" name="date">
+        <label>Gender</label>
+        <select class="login" name="gender">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+        </select>
+    </div>
+    <div class="login">
+        <!--<label>Avatar:</label>-->
+        <input type="text" name="avatar" placeholder="Avatar" size="56">
+        <span></span>
+    </div>
+    <div class="login">
+        <!--<label>Address:</label>-->
+        <textarea name="address" id="" cols="49" rows="3" placeholder="Address"></textarea>
+        <span></span>
+    </div>
+    <div class="login">
+        <input type="button"  name="submit" value="Login">
+        <input type="reset" value="Reset" name="btn-reset">
+        <input type="button" value="Trở về Music" name="btn-music">
+
+    </div>
+</form>
+<div class="msg-success"></div>
+<div class="msg-error"></div>
+<script src="../js/tablogin.js"></script>
+
+</body>
+</html>

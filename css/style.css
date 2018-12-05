@@ -148,7 +148,7 @@
 
 .header .webname {
     /*background: orange;*/
-    font-size: 130px;
+    font-size: 120px;
     text-align: left;
     /*float: left;*/
     padding-top: 5%;
@@ -200,6 +200,7 @@
 .song-item {
     border: 1px solid rgba(13,23,20,0.2);
     border-radius: 10px;
+    /*height: 200px;*/
 }
 .song-item:after {
     content: '';
@@ -212,27 +213,36 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    padding-top: 2%;
-    padding-left: 1%;
+    padding-top: 3%;
+    padding-left:10px;
 }
 .song-thumbnail {
+
     float: left;
     width: 10%;
+    /*height: 180px;*/
 }
 .song-thumbnail img {
     width: 100%;
-    border-radius: 10px;
+    height: 160px;
+    border-radius: 100px;
 }
 .song-infor {
-    padding-top: 1%;
+    /*padding-top: 1%;*/
     float: left;
     width: 20%;
+    padding-top: 3%;
+    padding-left: 2%;
+
 }
 .song-infor .song-name {
     font-weight: bold;
+    padding-left: 5px;
+    /*padding-top: 10%;*/
 }
 .song-infor .song-singer {
     font-weight: lighter;
+    padding-left: 5px;
     color: rgba(0,0,23,0.47);
 }
 .song-control {
