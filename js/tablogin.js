@@ -2,11 +2,11 @@
 document.forms["main-login"]["submit"].onclick = function () {
     if (check()) {
         savename();
-        location.href="index.html";
+        location.href="../html/index.html";
     }
 };
 document.forms["main-login"]["btn-music"].onclick = function () {
-    location.href="index.html";
+    location.href="../html/index.html";
 };
 
 function savename() {

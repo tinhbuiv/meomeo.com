@@ -16,61 +16,13 @@
 [class*="col-"] {
     width: 100%;
 }
+
 .msg-error {
     color: red;
 }
+
 .msg-success {
     color: green;
-}
-
-@media only screen and (min-width: 600px) {
-    .col-s-1 {
-        width: 8.33%;
-    }
-
-    .col-s-2 {
-        width: 16.66%;
-    }
-
-    .col-s-3 {
-        width: 25%;
-    }
-
-    .col-s-4 {
-        width: 33.33%;
-    }
-
-    .col-s-5 {
-        width: 41.66%;
-    }
-
-    .col-s-6 {
-        width: 50%;
-    }
-
-    .col-s-7 {
-        width: 58.33%;
-    }
-
-    .col-s-8 {
-        width: 66.66%;
-    }
-
-    .col-s-9 {
-        width: 75%;
-    }
-
-    .col-s-10 {
-        width: 83.33%;
-    }
-
-    .col-s-11 {
-        width: 91.66%;
-    }
-
-    .col-s-12 {
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -123,6 +75,108 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    /* For tablets: */
+    .col-r-1 {
+        width: 8.33%;
+    }
+
+    .col-r-2 {
+        width: 16.66%;
+    }
+
+    .col-r-3 {
+        width: 25%;
+    }
+
+    .col-r-4 {
+        width: 33.33%;
+    }
+
+    .col-r-5 {
+        width: 41.66%;
+    }
+
+    .col-r-6 {
+        width: 50%;
+    }
+
+    .col-r-7 {
+        width: 58.33%;
+    }
+
+    .col-r-8 {
+        width: 66.66%;
+    }
+
+    .col-r-9 {
+        width: 75%;
+    }
+
+    .col-r-10 {
+        width: 83.33%;
+    }
+
+    .col-r-11 {
+        width: 91.66%;
+    }
+
+    .col-r-12 {
+        width: 100%;
+    }
+}
+
 .header {
     background-color: orange;
     /*float: left;*/
@@ -130,125 +184,246 @@
     /*display: inline-block;*/
 }
 
-.header .logo {
-    /*width: 100%;*/
-    /*float: left;*/
-    /*background: orange;*/
-    /*height: 270px;*/
-    text-align: center;
-    /*padding-top: 1%;*/
+.body {
+    /*height: 100%;*/
+    background-image: url("../image/nenbody.jpg");
+    background-position: 400px 50px;
+    background-attachment: fixed;
+    background-size: 1300px 750px;
+}
 
+.header .logo {
+    padding-top: 2%;
+    text-align: center;
 }
 
 .header .logo img {
-    width: 70%;
-    /*text-align: center;*/
-    /*height: 270px;*/
+    width: 50%;
+    height: auto;
 }
 
-.header .webname {
-    /*background: orange;*/
-    font-size: 120px;
-    text-align: left;
-    /*float: left;*/
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 2%;
-    /*height: 270px;*/
+.body {
+    /*text-align: center;*/
 }
 
 .body .menu {
-    padding-left: 16%;
-    height: 100px;
-    background-color: antiquewhite;
-    /*background-color: orange;*/
-    border: 1px solid black;
-    /*float: left;*/
-    font-size: 30px;
+    background-image: url("https://images.goodsmile.info/cgm/images/product/20160927/5981/41606/large/e7136317c13b19304a9f6bb7ac16056b.jpg");
+    background-position: center center;
+    background-size: 350px 400px;
+    position: sticky;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 10.12), 0 1px 2px rgba(0, 0, 0, 10.24);
+    top: 0;
+
     /*text-align: center;*/
-    /*padding: 20px;*/
+
 }
 
 .menu ul {
     /*text-align: center;*/
+    /*margin-left: 10px;*/
+}
+
+label {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .menu ul li {
     display: block;
     /*float: left;*/
-    color: #71609C;
-    /*width: 90px;*/
-    /*font-family: Consolas;*/
-    text-decoration: underline;
-    font-size: 22px;
-    padding-left: 22px;
-    /*border-right: 3px solid black;*/
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
+    /*padding: 8px;*/
+    /*margin-bottom: 7px;*/
+    /*background-color: #33b5e5;*/
+    text-align: center;
+    /*height: 47px;*/
+}
+
+.login-wrap {
+    /*text-align: center;*/
+    /*background-image: url("../image/nenlogin2.png");*/
+    /*background-position: center center;*/
+    /*margin: 17px;*/
 }
 
 .main-login {
+    text-align: center;
     /*float: left;*/
     /*height: 270px;*/
     /*background-color: orange;*/
-    padding-top: 15%;
-    padding-bottom: 3%;
+    /*padding-top: 15%;*/
+    /*padding-bottom: 3%;*/
+}
+
+.main-content {
+    margin: 5px;
+    background-image: url("https://static.zerochan.net/Haruno.Sakura.full.2078260.jpg");
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 10.12), 0 1px 2px rgba(0, 0, 0, 10.24);
+    /*background-position: center center;*/
+    background-attachment: fixed;
+    background-size: 1300px 1300px;
+    /*height: 500px;*/
+
 }
 
 .login {
-    text-align: left;
-    padding-top: 3%;
+    text-align: center;
+    float: left;
+    margin: 3%;
+    /*text-align: left;*/
+    /*padding-top: 3%;*/
 }
-.song-item {
-    border: 1px solid rgba(13,23,20,0.2);
+
+.login-wrap {
+if()
+}
+
+.title {
+    width: auto;
+    height: auto;
+}
+
+.rollback {
+    /*background: orange;*/
+    /*padding: 10px;*/
+    /*border: 2px solid black;*/
+    /*float: right;*/
+    margin: 30px;
+    width: 5%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    padding-left: 90%;
+    cursor: pointer;
+}
+
+.Top100 {
+    font-size: 22px;
+    margin-top: 20px ;
+ color: white;
+}
+
+.mode {
+    /*margin: 10px;*/
+    /*margin-bottom: 50px;*/
+    background: rgba(94,91,83,0.42);
+    margin: 5px;
+    border-radius: 15px;
+}
+.mode label{
+    color: white;
+}
+.image-mode {
+    /*width: 100%;*/
+    float: left;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.image-mode img {
+    width: 100%;
     border-radius: 10px;
+    margin-top: 2px;
+    margin-left:2px;
+}
+
+.title-mode {
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 7px;
+    margin-bottom: 20px;
+}
+
+.audio {
+    position: sticky;
+    /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 10.12), 0 1px 2px rgba(0, 0, 0, 10.24);*/
+    bottom: 0;
+    padding-left: 100px /*width: 200px;*/
+}
+
+.login input {
+    opacity: 1;
+    border-radius: 10px;
+    /*margin: 10px;*/
+    /*background: #871e96;*/
+    /*width: 60px;*/
+}
+
+.menu input {
+    border-radius: 10px;
+    /*padding-bottom: 20px;*/
+    margin-bottom: 20px;
+    height: 40px;
+    width: 120px;
+    opacity: 1;
+    background: orange;
+}
+
+.song-item {
+    border: 1px solid rgba(13, 23, 20, 0.2);
+    border-radius: 10px;
+    /*background-image: url("http://quanaodongphuc.vn/wp-content/uploads/2016/02/v%E1%BA%A3i-kate-for-07-418x212.jpg");*/
+    background: rgba(94,91,83,0.42);
+    /*background-position: center center;*/
+    margin: 20px;
     /*height: 200px;*/
 }
+
 .song-item:after {
     content: '';
     clear: both;
     display: table;
 }
+
 .song-index {
     float: left;
-    width: 5%;
+    width: 10%;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     padding-top: 3%;
-    padding-left:10px;
+    /*padding-left: 10px;*/
 }
+
 .song-thumbnail {
 
     float: left;
-    width: 10%;
+    width: 20%;
     /*height: 180px;*/
 }
+
 .song-thumbnail img {
-    width: 100%;
-    height: 160px;
-    border-radius: 100px;
+    width: 90%;
+    height: 155px;
+    /*border-radius: 100px;*/
 }
+
 .song-infor {
     /*padding-top: 1%;*/
     float: left;
-    width: 20%;
+    /*width: 20px;*/
+    width: 35%;
     padding-top: 3%;
     padding-left: 2%;
 
 }
+
 .song-infor .song-name {
     font-weight: bold;
     padding-left: 5px;
+    width: 200px;
     /*padding-top: 10%;*/
 }
+
 .song-infor .song-singer {
     font-weight: lighter;
     padding-left: 5px;
-    color: rgba(0,0,23,0.47);
+    color: rgba(0, 0, 23, 0.47);
 }
+
 .song-control {
     padding-top: 3%;
     color: dodgerblue;
-    cursor: pointer;
+    /*cursor: pointer;*/
     text-decoration: underline;
     float: left;
     width: 10%;
@@ -256,11 +431,12 @@
 
 .song-detail {
     float: left;
-    width: 50%;
-    padding-top: 0.5%;
+    width: 10%;
+    padding-top: 3%;
     font-weight: bold;
 }
-.song-audio{
+
+.song-audio {
     text-align: center;
     padding-top: 2px;
 }

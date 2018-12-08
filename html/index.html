@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <title>Music</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 <div class="header row">
-    <div class="logo col-3 col-s-3">
-        <img src="../image/logo.png" alt="logo">
+    <div class="logo col-3 col-s-12 col-r-12">
+        <img src="../image/logonmeomeo.png" alt="logo">
         <!--</div>-->
     </div>
-    <div class="webname col-6 col-s-9">
-        meomeo.com
-        <!--</div>-->
-    </div>
-    <div class="col-3 col-s-12 login-wrap">
+    <div class="col-5 col-s-12 col-r-12 login-wrap">
         <form class="main-login" action="#" method="get" name="login-form">
             <div class="login">
                 <label>Email:</label>
@@ -35,30 +33,111 @@
         </form>
         <div class="login">
             <label> Bạn chưa có tài khoản meomeo?</label>
-            <a href="tablogin.html">ĐĂNG KÍ NGAY !</a>
+            <a href="../html/tablogin.html">ĐĂNG KÍ NGAY !</a>
         </div>
     </div>
+    <!--<div class="webname col-6 col-s-9">-->
+    <!--<label class="text">meomeo.com</label>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
 </div>
 <div class="body">
     <script>
     </script>
-    <div class="menu col-12 col-s-12">
-        <ul>
-            <li class="col-3"><input type="button" value="Register" name="btn-Register"></li>
-            <!--<li class="col-2"><input type="button" value="Login" name="btn-loadsong"></li>-->
-            <li class="col-3"><input type="button"  value="Create Song" name="btn-createsong"></li>
-            <li class="col-3"><input type="button" value="List Song" name="btn-loadsong"></li>
-            <li class="col-3"><input type="button" value="My Song" name="btn-mysong"></li>
-        </ul>
-    </div>
-    <div class="main-content" id="main-content">
-        <audio controls src=""></audio>
+    <div class="row">
+        <div class="menu col-2 col-s-12">
+            <ul class="a">
+                <li><i class="fas fa-home fa-2x"></i></li>
+                <li><input type="button" value="Register" name="btn-Register"></li>
+                <li><input type="button" value="Create Song" name="btn-createsong"></li>
+                <li><input type="button" value="List Song" name="btn-loadsong"></li>
+                <li><input type="button" value="My Song" name="btn-mysong"></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="main-content col-7 col-s-12" id="main-content">
+            <!--<audio controls src=""></audio>-->
+        </div>
+        <div class="Top100 col-2 col-s-12">
+            <label>TOP 100 THỂ LOẠI KHÁC</label>
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/8/2/82795b2929dedc4beeef18242c343c29_1514893887.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Pop</label></a>
+                </div>
+            </div>
 
-    </div>
-    <!--<div class="title">-->
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/4/2/4243246c6a9d91740069c50b804dbb34_1514893591.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Country</label></a>
+                </div>
+            </div>
 
-    <!--</div>-->
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/6/9/698aaccca42678294b5ad6efbf6d633d_1514893737.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Rock</label></a>
+                </div>
+            </div>
+
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/7/5/753b42ff17ba61328e39f6bc0f7f285f_1508236744.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Electrolic / Dance</label></a>
+                </div>
+            </div>
+
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/c/3/c3311ac19ea5ea05b088e78d2df59c57_1514893807.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>R&B / Soul</label></a>
+                </div>
+            </div>
+
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/5/b/5bc0e28c9e9c892ec6748b86ccd8bf6b_1514893945.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Rap / Hip Hop</label></a>
+                </div>
+            </div>
+
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/c/1/c1d65993ca390c444b7812b6d9ad5a48_1514894838.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Nhac Phim</label></a>
+                </div>
+            </div>
+
+            <div class="mode col-12">
+                <div class="image-mode col-3 col-s-1">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94h94_jpeg//covers/6/a/6a7839a402f7520ca0a825f115de1d37_1514894749.jpg">
+                </div>
+                <div class="title-mode col-9 col-s-11">
+                    <a href="#"><label>Audiophile</label></a>
+                </div>
+            </div>
+
+
+        </div>
+        <audio controls src="" class=" col-11 audio"></audio>
+    </div>
+    <div class="rollback"><a href="#"><i class="fas fa-arrow-circle-up fa-3x"></i></a></div>
 </div>
 </body>
-<script src="../js/login.js"></script>
+<script src="../js/index.js"></script>
 </html>

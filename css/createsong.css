@@ -1,8 +1,3 @@
-* {
-    font-family: Tahoma;
-    margin: 7px;
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -13,81 +8,44 @@
     /*text-align: center;*/
     background-color: orange;
 }
-
+body{
+    background-image: url("https://otakukart.com/animeblog/wp-content/uploads/2017/02/akatsuki_2_0_by_odinforce23-da4qnwa.jpg");
+    background-size: cover;
+}
+label{
+    color: white;
+    margin-left: 20px;
+}
 .webname {
     text-align: center;
     width: 100%;
     float: left;
-    font-size: 130px;
+    /*font-size: 130px;*/
 }
-
-.song-item {
-    border: 1px solid rgba(13, 23, 20, 0.2);
+.body{
+    /*text-align: center;*/
+    background: rgba(94,91,83,0.42);
+    float: left;
+    margin-left: 35%;
+    margin-top: 5%;
+    /*display: block;*/
+}
+.webname label{
+    font-size: 1000%;
+}
+.body input{
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    /*margin-left: 4px;*/
+}
+.body .submit input{
+    height: 30px;
+    width: 100px;
+    background: orange;
     border-radius: 10px;
 }
-
-.song-item:after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
-.song-index {
-    float: left;
-    width: 5%;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 2%;
-    padding-left: 1%;
-}
-
-.song-thumbnail {
-    float: left;
-    width: 10%;
-}
-
-.song-thumbnail img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.song-infor {
-    padding-top: 1%;
-    float: left;
-    width: 20%;
-}
-
-.song-infor .song-name {
-    font-weight: bold;
-}
-
-.song-infor .song-singer {
-    font-weight: lighter;
-    color: rgba(0, 0, 23, 0.47);
-}
-
-.song-control {
-    padding-top: 3%;
-    color: dodgerblue;
-    cursor: pointer;
-    text-decoration: underline;
-    float: left;
-    width: 10%;
-}
-
-.song-detail {
-    float: left;
-    width: 50%;
-    padding-top: 0.5%;
-    font-weight: bold;
-}
-
-.song-audio {
-    text-align: center;
-    padding-top: 2px;
-}
-
 .msg-error {
     color: red;
 }

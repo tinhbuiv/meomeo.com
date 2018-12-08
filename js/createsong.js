@@ -4,14 +4,10 @@ document.getElementById('save-more').onclick = function () {
     }
 };
 document.forms["song-form"]["backtomusic"].onclick = function () {
-    location.href="index.html";
+    location.href = "../html/index.html";
 };
+
 function saveSong() {
-    // var token = localStorage.getItem('token-key');
-    // if (token == null || token.length == 0) {
-    //     alert("Vui lòng đăng nhập.")
-    //     location.href = 'index.html';
-    // }
     var name = document.forms['song-form']['Name'].value;
     var singer = document.forms['song-form']['Singer'].value;
     var author = document.forms['song-form']['Author'].value;
@@ -32,10 +28,9 @@ function saveSong() {
             // document.forms('song-form').reset();
         }
     };
-    xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/post-free', true);
+    xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('Authorization', 'Basic ' + localStorage.getItem('token-key'));
-    // xhr.setRequestHeader('Authorization', 'Basic ' + token);
     xhr.send(sendData);
 }
 
@@ -49,7 +44,10 @@ function checksong() {
     var token = localStorage.getItem('token-key');
     if (token == null || token.length == 0) {
         alert("Vui lòng đăng nhập.")
-        location.href = 'index.html';
+        location.href = '../html/index.html';
+    } else {
+        document.getElementsByClassName('login-wrap').style = 'display:none';
+
     }
     var msgname = txtname.nextElementSibling;
     if (txtname == null || txtname.value.length === 0) {
@@ -77,7 +75,7 @@ function checksong() {
         msgauthor.classList.remove("msg-success");
         msgauthor.classList.add("msg-error");
         return false;
-    }else {
+    } else {
         msgauthor.innerHTML = "  ";
     }
 
@@ -87,16 +85,16 @@ function checksong() {
         msgthumbnail.classList.remove("msg-success");
         msgthumbnail.classList.add("msg-error");
         return false;
-    }else {
+    } else {
         msgthumbnail.innerHTML = "";
     }
 
     var msglink = txtlink.nextElementSibling;
-    if(txtlink == null || txtlink.value.length === 0) {
+    if (txtlink == null || txtlink.value.length === 0) {
         msglink.innerHTML = "Vui lòng nhập link bài hát";
         msglink.classList.add("msg-error");
         return false;
-    }else {
+    } else {
         msglink.innerHTML = "";
     }
     return true;
