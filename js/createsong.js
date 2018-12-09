@@ -25,7 +25,7 @@ function saveSong() {
     xhr.onreadystatechange = function () {//khi trang thai thay doi// thuowng duoc gan bang mot ham vo danh
         if (xhr.readyState == 4 && xhr.status == 201) {
             alert('save success');
-            // document.forms('song-form').reset();
+            document.forms('song-form').reset();
         }
     };
     xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs', true);

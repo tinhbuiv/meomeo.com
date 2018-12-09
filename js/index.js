@@ -63,16 +63,18 @@ function loadSong() {
             for (var i = 0; i < arraySongs.length; i++) {
                 var song = arraySongs[i];
                 htmlcontent += '<div class="song-item">';
-                htmlcontent += '<div class="song-index">' + (i + 1) + '</div>';
+                htmlcontent += '<div class="song-index"><i class="fas fa-headphones fa-2x"></i>' + (i + 1) + '</div>';
                 htmlcontent += '<div class="song-thumbnail">';
                 htmlcontent += '<img src="' + song.thumbnail + '">';
                 htmlcontent += '</div>';
                 htmlcontent += '<div class="song-infor">';
-                htmlcontent += '<div class="song-name">' + song.name + '</div>';
-                htmlcontent += '<div class="song-singer">' + song.singer + '</div>';
+                htmlcontent += '<div class="song-name"><i class="fas fa-bullhorn fa-2x"></i>' +  song.name + '</div>';
+                htmlcontent += '<div class="song-singer"><i class="fas fa-microphone fa-2x"></i>' + song.singer + '</div>';
                 htmlcontent += '</div>';
-                htmlcontent += '<div class="song-control" onclick="playsong(\'' + song.link + '\')">Play Song</div>';
-                htmlcontent += '<div class="song-detail"><a href="#">Detail</a></div>';
+                htmlcontent += '<div class="song-control" onclick="playsong(\'' + song.link + '\')"><i class="far fa-play-circle fa-3x"></i></div>';
+                htmlcontent += '<div class="song-control"><a href="#"><i class="fas fa-info-circle fa-3x"></i></a></div>';
+                // htmlcontent += '<div class="song-control"><a href="#"><i class="fas fa-volume-up fa-3x"></i></a></div>';
+
                 // htmlcontent += '<div class="song-control"><audio controls src="\'' + song.link + '\'"></audio></div>';
                 htmlcontent += '</div>';
             }
@@ -102,16 +104,18 @@ function mySong() {
             for (var i = 0; i < arraySongs.length; i++) {
                 var song = arraySongs[i];
                 htmlcontent += '<div class="song-item">';
-                htmlcontent += '<div class="song-index">' + (i + 1) + '</div>';
+                htmlcontent += '<div class="song-index col-2"><i class="fas fa-headphones fa-2x"></i>' + (i + 1) + '</div>';
                 htmlcontent += '<div class="song-thumbnail">';
                 htmlcontent += '<img src="' + song.thumbnail + '">';
                 htmlcontent += '</div>';
                 htmlcontent += '<div class="song-infor">';
-                htmlcontent += '<div class="song-name">' + song.name + '</div>';
-                htmlcontent += '<div class="song-singer">' + song.singer + '</div>';
+                htmlcontent += '<div class="song-name"><i class="fas fa-bullhorn fa-2x"></i>' +  song.name + '</div>';
+                htmlcontent += '<div class="song-singer"><i class="fas fa-microphone fa-2x"></i>' + song.singer + '</div>';
                 htmlcontent += '</div>';
-                htmlcontent += '<div class="song-control" onclick="playsong(\'' + song.link + '\')">Play Song</div>';
-                htmlcontent += '<div class="song-control"><a href="#">Detail</a></div>';
+                htmlcontent += '<div class="song-control" onclick="playsong(\'' + song.link + '\')"><i class="far fa-play-circle fa-3x"></i></div>';
+                htmlcontent += '<div class="song-control"><a href="#"><i class="fas fa-info-circle fa-3x"></i></a></div>';
+                // htmlcontent += '<div class="song-control"><a href="#"><i class="fas fa-volume-up fa-3x"></i></a></div>';
+
                 // htmlcontent += '<div class="song-control"><audio controls src="\'' + song.link + '\'"></audio></div>';
                 htmlcontent += '</div>';
             }

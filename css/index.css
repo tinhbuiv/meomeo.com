@@ -15,6 +15,12 @@
 [class*="col-"] {
     width: 100%;
 }
+[class*="fa"] {
+    color: white;
+    padding-right: 10px;
+    /*padding-top: 100px;*/
+    /*width: 90%;*/
+}
 
 .msg-error {
     color: red;
@@ -318,11 +324,12 @@ label {
 
 .song-index {
     float: left;
-    width: 10%;
+    width: 18%;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2%;
+    color: white;
 }
 
 .song-thumbnail {
@@ -332,13 +339,14 @@ label {
 
 .song-thumbnail img {
     width: 90%;
-    height: 155px;
+    /*height: 5%;*/
+    /*border-radius: 3000px;*/
 }
 
 .song-infor {
     float: left;
-    width: 35%;
-    padding-top: 3%;
+    width: 32%;
+    padding-top: 2%;
     padding-left: 2%;
 
 }
@@ -346,33 +354,25 @@ label {
 .song-infor .song-name {
     font-weight: bold;
     padding-left: 5px;
-    width: 200px;
+    /*padding-top: 20px;*/
+    width: 100%;
+    color: white;
     /*padding-top: 10%;*/
 }
 
 .song-infor .song-singer {
     font-weight: lighter;
     padding-left: 5px;
-    color: rgba(0, 0, 23, 0.47);
+    padding-top: 10px;
+    color:white;
+
 }
 
 .song-control {
-    padding-top: 3%;
+    padding-top: 2%;
     color: dodgerblue;
     /*cursor: pointer;*/
     text-decoration: underline;
     float: left;
-    width: 10%;
-}
-
-.song-detail {
-    float: left;
-    width: 10%;
-    padding-top: 3%;
-    font-weight: bold;
-}
-
-.song-audio {
-    text-align: center;
-    padding-top: 2px;
+    width: 18%;
 }
