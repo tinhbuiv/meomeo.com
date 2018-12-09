@@ -10,7 +10,6 @@
 
 [class*="col-"] {
     float: left;
-    /*padding: 15px;*/
 }
 
 [class*="col-"] {
@@ -76,7 +75,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    /* For tablets: */
     .col-s-1 {
         width: 8.33%;
     }
@@ -127,7 +125,6 @@
 }
 
 @media only screen and (max-width: 370px) {
-    /* For tablets: */
     .col-r-1 {
         width: 8.33%;
     }
@@ -179,13 +176,9 @@
 
 .header {
     background-color: orange;
-    /*float: left;*/
-    /*height: 300px;*/
-    /*display: inline-block;*/
 }
 
 .body {
-    /*height: 100%;*/
     background-image: url("../image/nenbody.jpg");
     background-position: 400px 50px;
     background-attachment: fixed;
@@ -202,10 +195,6 @@
     height: auto;
 }
 
-.body {
-    /*text-align: center;*/
-}
-
 .body .menu {
     background-image: url("https://images.goodsmile.info/cgm/images/product/20160927/5981/41606/large/e7136317c13b19304a9f6bb7ac16056b.jpg");
     background-position: center center;
@@ -213,14 +202,6 @@
     position: sticky;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 10.12), 0 1px 2px rgba(0, 0, 0, 10.24);
     top: 0;
-
-    /*text-align: center;*/
-
-}
-
-.menu ul {
-    /*text-align: center;*/
-    /*margin-left: 10px;*/
 }
 
 label {
@@ -229,52 +210,26 @@ label {
 
 .menu ul li {
     display: block;
-    /*float: left;*/
-    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
-    /*padding: 8px;*/
-    /*margin-bottom: 7px;*/
-    /*background-color: #33b5e5;*/
     text-align: center;
-    /*height: 47px;*/
-}
-
-.login-wrap {
-    /*text-align: center;*/
-    /*background-image: url("../image/nenlogin2.png");*/
-    /*background-position: center center;*/
-    /*margin: 17px;*/
 }
 
 .main-login {
     text-align: center;
-    /*float: left;*/
-    /*height: 270px;*/
-    /*background-color: orange;*/
-    /*padding-top: 15%;*/
-    /*padding-bottom: 3%;*/
 }
 
 .main-content {
     margin: 5px;
     background-image: url("https://static.zerochan.net/Haruno.Sakura.full.2078260.jpg");
+    border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 10.12), 0 1px 2px rgba(0, 0, 0, 10.24);
-    /*background-position: center center;*/
     background-attachment: fixed;
     background-size: 1300px 1300px;
-    /*height: 500px;*/
-
 }
 
 .login {
     text-align: center;
     float: left;
     margin: 3%;
-    /*text-align: left;*/
-    /*padding-top: 3%;*/
-}
-
-.login-wrap {
-if()
 }
 
 .title {
@@ -283,10 +238,6 @@ if()
 }
 
 .rollback {
-    /*background: orange;*/
-    /*padding: 10px;*/
-    /*border: 2px solid black;*/
-    /*float: right;*/
     margin: 30px;
     width: 5%;
     height: auto;
@@ -298,22 +249,21 @@ if()
 
 .Top100 {
     font-size: 22px;
-    margin-top: 20px ;
- color: white;
+    margin-top: 20px;
+    color: white;
 }
 
 .mode {
-    /*margin: 10px;*/
-    /*margin-bottom: 50px;*/
-    background: rgba(94,91,83,0.42);
+    background: rgba(94, 91, 83, 0.42);
     margin: 5px;
     border-radius: 15px;
 }
-.mode label{
+
+.mode label {
     color: white;
 }
+
 .image-mode {
-    /*width: 100%;*/
     float: left;
     height: 50px;
     margin-bottom: 20px;
@@ -323,7 +273,7 @@ if()
     width: 100%;
     border-radius: 10px;
     margin-top: 2px;
-    margin-left:2px;
+    margin-left: 2px;
 }
 
 .title-mode {
@@ -335,22 +285,17 @@ if()
 
 .audio {
     position: sticky;
-    /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 10.12), 0 1px 2px rgba(0, 0, 0, 10.24);*/
     bottom: 0;
-    padding-left: 100px /*width: 200px;*/
+    padding-left: 100px;
 }
 
 .login input {
     opacity: 1;
     border-radius: 10px;
-    /*margin: 10px;*/
-    /*background: #871e96;*/
-    /*width: 60px;*/
 }
 
 .menu input {
     border-radius: 10px;
-    /*padding-bottom: 20px;*/
     margin-bottom: 20px;
     height: 40px;
     width: 120px;
@@ -361,11 +306,8 @@ if()
 .song-item {
     border: 1px solid rgba(13, 23, 20, 0.2);
     border-radius: 10px;
-    /*background-image: url("http://quanaodongphuc.vn/wp-content/uploads/2016/02/v%E1%BA%A3i-kate-for-07-418x212.jpg");*/
-    background: rgba(94,91,83,0.42);
-    /*background-position: center center;*/
+    background: rgba(94, 91, 83, 0.42);
     margin: 20px;
-    /*height: 200px;*/
 }
 
 .song-item:after {
@@ -381,26 +323,20 @@ if()
     font-weight: bold;
     text-align: center;
     padding-top: 3%;
-    /*padding-left: 10px;*/
 }
 
 .song-thumbnail {
-
     float: left;
     width: 20%;
-    /*height: 180px;*/
 }
 
 .song-thumbnail img {
     width: 90%;
     height: 155px;
-    /*border-radius: 100px;*/
 }
 
 .song-infor {
-    /*padding-top: 1%;*/
     float: left;
-    /*width: 20px;*/
     width: 35%;
     padding-top: 3%;
     padding-left: 2%;

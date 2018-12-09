@@ -2,8 +2,9 @@
 document.forms["main-login"]["submit"].onclick = function () {
     if (check()) {
         savename();
+        alert("đăng kí thành công.");
         location.href="../html/index.html";
-    }
+        }
 };
 document.forms["main-login"]["btn-music"].onclick = function () {
     location.href="../html/index.html";
