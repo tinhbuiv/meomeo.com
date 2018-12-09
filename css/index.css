@@ -333,6 +333,7 @@ label {
 }
 
 .song-thumbnail {
+    padding-left: 1%;
     float: left;
     width: 20%;
 }
@@ -370,6 +371,7 @@ label {
 
 .song-control {
     padding-top: 2%;
+    padding-left: 5%;
     color: dodgerblue;
     /*cursor: pointer;*/
     text-decoration: underline;
