@@ -139,9 +139,15 @@ label {
 
 .webname {
     text-align: center;
-    width: 100%;
+    /*width: 100%;*/
     float: left;
     /*font-size: 130px;*/
+    /*margin-left: 42%;*/
+}
+
+.webname img {
+    width: 20%;
+    /*text-align: center;*/
 }
 
 body {
@@ -157,9 +163,6 @@ body {
     /*display: block;*/
 }
 
-.webname label {
-    font-size: 1000%;
-}
 
 .body input {
     height: 25px;
