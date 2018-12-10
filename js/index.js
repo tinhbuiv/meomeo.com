@@ -87,10 +87,10 @@ function loadSong() {
     xhr.send();
 }
 
-var token = localStorage.getItem('token-key');
-if (token != null || token.length != 0) {
-    document.getElementsByClassName('login-wrap').style = 'display:none';
-}
+// var token = localStorage.getItem('token-key');
+// if (token != null || token.length != 0) {
+//     document.getElementsByClassName('login-wrap').style = 'display:none';
+// }
 
 function mySong() {
     var xhr = new XMLHttpRequest();

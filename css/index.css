@@ -317,6 +317,7 @@ label {
     border-radius: 10px;
     background: rgba(94, 91, 83, 0.42);
     margin: 20px;
+    height: 155px;
 }
 
 .song-item:after {
