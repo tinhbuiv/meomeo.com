@@ -204,7 +204,7 @@
 
 .body .menu {
     background-image: url("https://images.goodsmile.info/cgm/images/product/20160927/5981/41606/large/e7136317c13b19304a9f6bb7ac16056b.jpg");
-    background-repeat:no-repeat;
+    /*background-repeat:no-repeat;*/
     background-position: center center;
     background-size: 350px 400px;
     position: sticky;
