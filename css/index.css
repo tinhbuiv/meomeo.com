@@ -30,7 +30,7 @@
     color: green;
 }
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {*/
     .col-1 {
         width: 8.33%;
     }
@@ -78,7 +78,7 @@
     .col-12 {
         width: 100%;
     }
-}
+/*}*/
 
 @media only screen and (max-width: 768px) {
     .col-s-1 {
