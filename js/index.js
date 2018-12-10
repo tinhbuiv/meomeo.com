@@ -16,11 +16,13 @@ btnregister.onclick = function () {
 
 var btnloadsong = document.getElementsByName("btn-loadsong")[0];
 btnloadsong.onclick = function () {
+    document.getElementsByClassName("main-content")[0].innerHTML = '';
     loadSong();
 };
 
 var btnmysong = document.getElementsByName("btn-mysong")[0];
 btnmysong.onclick = function () {
+    document.getElementsByClassName("main-content")[0].innerHTML = '';
     mySong();
 };
 
@@ -81,7 +83,7 @@ function loadSong() {
             document.getElementById("main-content").innerHTML += htmlcontent;
         }
     };
-    xhr.open('GET', 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-free-songs', true);
+    xhr.open('GET', 'https://2-dot-backup-server-003.appspot.com/_api/v2/songs/get-free-songs', true);
     xhr.send();
 }
 
@@ -122,7 +124,7 @@ function mySong() {
             document.getElementById("main-content").innerHTML += htmlcontent;
         }
     };
-    xhr.open('GET', 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-mine', true);
+    xhr.open('GET', 'https://2-dot-backup-server-003.appspot.com/_api/v2/songs/get-mine', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('Authorization', 'Basic ' + token);
     xhr.send();
@@ -151,7 +153,7 @@ function doLogin() {
         ;
     }
 
-    xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/members/authentication', true);
+    xhr.open('POST', 'https://2-dot-backup-server-003.appspot.com/_api/v2/members/authentication', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(jsonLoginInformation);
 }

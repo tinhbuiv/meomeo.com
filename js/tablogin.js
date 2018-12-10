@@ -1,10 +1,11 @@
 // var btnSubmit =
 document.forms["main-login"]["submit"].onclick = function () {
     if (check()) {
-        savename();
-        alert("đăng kí thành công.");
-        location.href="../html/index.html";
+        if (savename()) {
+            alert("đăng kí thành công.");
+            location.href="../html/index.html";
         }
+    }
 };
 document.forms["main-login"]["btn-music"].onclick = function () {
     location.href="../html/index.html";
@@ -39,13 +40,13 @@ function savename() {
         } else if (xhr.readyState == 4) {
             text = JSON.parse(xhr.responseText).error.email;
             var msgemail = document.forms['main-login']['email'].nextElementSibling;
-            msgemail.innerHTML = text;
+            msgemail.innerHTML = "Email " + text;
             msgemail.classList.remove("msg-success");
             msgemail.classList.add("msg-error");
             alert('Register fails, please try again! ' + text);
         }
     };
-    xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/members', true);
+    xhr.open('POST', 'https://2-dot-backup-server-003.appspot.com/_api/v2/members', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(abc);
 };
